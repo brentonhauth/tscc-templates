@@ -1,0 +1,130 @@
+<mjml>
+  <mj-body background-color="#e3e3ea">
+  <!-- Company Header -->
+  <mj-section background-color="white" padding="0px">
+    <mj-column padding="0">
+      <mj-image src="../img/banner-no-text.jpg" width="600px" padding="0" alt="" />
+    </mj-column>
+  </mj-section>
+
+  <!-- REGISTRATION COMPLETE -->
+  <mj-section background-color="#ffffff" padding="0">
+    <mj-column
+      padding-top="40px"
+      padding-bottom="40px">
+      <mj-text
+        color="#333333"
+        align="center"
+        font-size="26px"
+        padding-top="0px"
+        padding-bottom="30px"
+        >REGISTRATION COMPLETE</mj-text>
+      <mj-divider border-width="2px" border-color="#123055" width="133px" padding="0" />
+      <mj-text
+        color="#9194a7"
+        align="left"
+        font-size="15px"
+        line-height="22px"
+        padding-top="35px"
+        padding-bottom="10px"
+        >Hi %%registrant_name_first%% %%registrant_name_last%%,<br /><br />
+        You have successfully registered for the %%EVENT_LIST_NAMES_AND_DATES%% at the Toronto Sailing and Canoe Club.
+        Your instructor will email you two days before your lesson to confirm that the weather is good for sailing.
+        If you have not gotten in touch with the program manager to schedule a lesson,
+        please do so now at <b><a href="mailto:tscc.programs@gmail.com"
+          style="text-decoration:none;color:#8a8da0">tscc.programs@gmail.com</a></b>.
+        <br /><br />
+        We’re excited to have you join us!
+      </mj-text>
+      <mj-image src="../img/burgee.png" width="150px" alt="" />
+    </mj-column>
+  </mj-section>
+
+  <!-- HOW TO FIND US -->
+  <mj-section background-color="#f8f8ff" padding="0">
+    <mj-column
+      padding-top="40px"
+      padding-bottom="40px">
+      <mj-text
+        color="#333333"
+        align="center"
+        font-size="26px"
+        padding-top="0px"
+        padding-bottom="30px"
+        >HOW TO FIND US</mj-text>
+      <mj-divider border-width="2px" border-color="#123055" width="133px" padding="0" />
+      <mj-text
+        color="#9194a7"
+        align="left"
+        font-size="15px"
+        line-height="22px"
+        padding-top="35px"
+        >We are located at <b><a
+          style="text-decoration:none;color:#8a8da0"
+          href="https://www.google.com/maps/place/1391+Lake+Shore+Blvd+W,+Toronto,+ON+M6K+3C1"
+          target="_blank"
+        >1391 Lake Shore Boulevard West</a></b>, in behind the Royal Canadian Legion and just east of the Boulevard Club.
+        Access the parking lot by turning onto Net Drive which is a small lane off of Lake Shore Boulevard in between the tennis courts and outdoor fitness area.
+        You do not need to pay for parking for drop offs, if you're parking for longer periods of time free parking passes are available upon arrival.
+        Bike racks are available inside the gate. The gate code will be provided before your lesson begins.
+        <br /><br />
+        The closest transit stop is the Dowling Avenue stop via the 504 King Streetcar.
+        Walk south down Dowling to the pedestrian bridge across the Gardiner, and cross Lake Shore at the lights.  
+      </mj-text>
+    </mj-column>
+  </mj-section>
+
+  <!-- WHAT TO BRING -->
+  <mj-section background-color="#ffffff" padding="0">
+    <mj-column
+      padding-top="40px"
+      padding-bottom="40px">
+      <mj-text
+        color="#333333"
+        align="center"
+        font-size="26px"
+        padding-top="0px"
+        padding-bottom="30px"
+        >WHAT TO BRING</mj-text>
+      <mj-divider border-width="2px" border-color="#123055" width="133px" padding="0" />
+      <mj-text
+        color="#9194a7"
+        align="left"
+        font-size="15px"
+        line-height="22px"
+        padding-top="35px">
+        For your Private Lesson you will need the following:<br /><br />
+        <mj-raw>
+          <ul style="padding: 0; margin: 0; list-style-type: disc;">
+            <li style="margin:0 0 12px 20px;" class="list-item-first">Closed toed shoes that can get wet (water shoes, tevas, old pair of running shoes work great, avoid crocs)</li>
+            <li style="margin:0 0 0 20px;"class="list-item-last">A wind/water resistant jacket</li>
+          </ul>
+        </mj-raw>
+      </mj-text>
+    </mj-column>
+  </mj-section>
+
+  <!-- FOOTER -->
+  <mj-section background-color="#e3e3ea" padding="0">
+    <mj-column
+      padding-top="20px"
+      padding-bottom="20px">
+      <mj-text
+        color="#8a8da0"
+        align="center"
+        font-size="15px"
+        line-height="22px">
+        If you have any questions don’t hesitate to email
+        <b><a href="mailto:tscc.programs@gmail.com"
+          style="text-decoration:none;color:#8a8da0">tscc.programs@gmail.com</a></b>
+        or call <b>(647)&nbsp;242&nbsp;-&nbsp;4856</b>.
+        Your purchase receipt is attached to this email.<br /><br />
+        1391 Lake Shore Blvd West Toronto ON M6K 3C1<br />
+        <b><a href="https://tscc.net/" target="_blank"
+          style="text-decoration:none;color:#8a8da0">Toronto Sailing &amp; Canoe Club</a></b>
+      </mj-text>
+    </mj-column>
+  </mj-section>
+
+  </mj-body>
+</mjml>
