@@ -1,0 +1,10 @@
+#!/bin/sh
+
+for f in ./src/*.mjml; do
+    s=${f##*/}
+    n=${s%.*}
+    output="./builds/$n.html"
+    echo "$n  =>  $output"
+    # ./node_modules/.bin/mjml tru
+    ./node_modules/.bin/mjml $f --config.minify -o $output
+done

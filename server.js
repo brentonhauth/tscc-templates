@@ -5,21 +5,19 @@ const fs = require('fs');
 const cp = require('child_process');
 const app = require('express')();
 
-var Index = "";
+let Index = "";
 
-var templateNames = [];
-
-var minify = false;
+let templateNames = [];
 
 const uri = 'https://secure.e-registernow.com/M3474/images/';
 
 
 /** @param {string} path */
 const buildf = path => new Promise((resolve, reject) => {
-  cp.exec(`call mjml src${path}.mjml`+
-  ` --config.minify ${minify}`+
+  cp.exec(`./mjml ./src${path}.mjml` +
+  ` --config.minify` +
   ` -o builds${path}.html`,
-    (e, o, _) => e ? reject(e) : resolve(o));
+  (e, o, _) => e ? reject(e) : resolve(o));
 });
 
 /** @param {string} path */
@@ -78,8 +76,8 @@ app.use((err, _req, res, _next) => {
 fs.readdir('./src', (err, files) => {
   if (err) { throw err; }
 
-  for (var file of files) {
-    var [f] = file.split(/\.(mjml$)?/i);
+  for (let file of files) {
+    let [f] = file.split(/\.(mjml$)?/i);
     Index += `<tr>
       <td><a href="/${f}">${f}</a></td>
       <td><a href="/build/${f}">
@@ -96,6 +94,8 @@ fs.readdir('./src', (err, files) => {
     <table style="margin-right:auto;margin-left:auto">${Index}</table>
   </div>`;
 
-  app.listen(8080, () => console.log('\n\x1b[33m> listening on http://localhost:8080/\x1b[0m'));
+  app.listen(8080, () => {
+    console.log('\n\x1b[33m> listening on http://localhost:8080/\x1b[0m');
+  });
 });
 
