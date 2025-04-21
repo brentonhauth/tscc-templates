@@ -3,7 +3,7 @@
   <!-- Company Header -->
   <mj-section background-color="white" padding="0px">
     <mj-column padding="0">
-      <mj-image src="../img/banner-no-text.jpg" width="600px" padding="0" alt="" />
+      <mj-image src="https://secure.e-registernow.com/M3474/images/banner-no-text.jpg" width="600px" padding="0" alt="" />
     </mj-column>
   </mj-section>
 
@@ -29,13 +29,13 @@
         padding-bottom="10px"
         >Hi %%registrant_name_first%% %%registrant_name_last%%,<br /><br />
         You have successfully registered for the %%EVENT_LIST_NAMES_AND_DATES%% at the Toronto Sailing and Canoe Club.
-        Please arrive 5 mins before your allotted one hour time slot, if you don’t know what slot you signed up for,
+        Please arrive 5 mins before your allotted one hour time slot, if you don't know what slot you signed up for,
         please email <b><a href="mailto:programs@tscc.net" style="text-decoration:none;color:#8a8da0">programs@tscc.net</a></b>.
         Our clubhouse bar/restaurant will be open, so feel free to stick around after your sail!
         <br /><br />
-        We’re excited to have you join us!
+        We're excited to have you join us!
       </mj-text>
-      <mj-image src="../img/burgee.png" width="150px" alt="" />
+      <mj-image src="https://secure.e-registernow.com/M3474/images/burgee.png" width="150px" alt="" />
     </mj-column>
   </mj-section>
 
@@ -97,7 +97,7 @@
           <ul style="padding: 0; margin: 0; list-style-type: disc;">
             <li style="margin:0 0 12px 20px;" class="list-item-first">Lifejacket if you have one, otherwise one can be provided</li>
             <li style="margin:0 0 12px 20px;">Closed toed shoes that can get wet (water shoes, tevas, old pair of running shoes work great, avoid crocs)</li>
-            <li style="margin:0 0 12px 20px;">Sunscreen</li>
+            <li style="margin:0 0 12px 20px;">Hat, sunglasses, sunscreen and/or other forms of sun protection</li>
             <li style="margin:0 0 12px 20px;">A refillable waterbottle</li>
             <li style="margin:0 0 12px 20px;">Athletic style clothes that can get wet (avoid jeans and heavy cotton)</li>
             <li style="margin:0 0 12px 20px;">A change of clothes for before/after sailing</li>
@@ -118,7 +118,7 @@
         align="center"
         font-size="15px"
         line-height="22px">
-        If you have any questions don’t hesitate to email
+        If you have any questions don't hesitate to email
         <b><a href="mailto:programs@tscc.net"
           style="text-decoration:none;color:#8a8da0">programs@tscc.net</a></b>
         or call <b>(647)&nbsp;242&nbsp;-&nbsp;4856</b>.

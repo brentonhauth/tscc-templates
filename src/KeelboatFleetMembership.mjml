@@ -3,7 +3,7 @@
   <!-- Company Header -->
   <mj-section background-color="white" padding="0px">
     <mj-column padding="0">
-      <mj-image src="../img/banner-no-text.jpg" width="600px" padding="0" alt="" />
+      <mj-image src="https://secure.e-registernow.com/M3474/images/banner-no-text.jpg" width="600px" padding="0" alt="" />
     </mj-column>
   </mj-section>
 
@@ -30,9 +30,9 @@
         >Hi %%registrant_name_first%% %%registrant_name_last%%,<br /><br />
         You have successfully paid for the %%EVENT_LIST_NAMES_AND_DATES%% at the Toronto Sailing and Canoe Club.
         <br /><br />
-        We’re excited to have you join us!
+        We're excited to have you join us!
       </mj-text>
-      <mj-image src="../img/burgee.png" width="150px" alt="" />
+      <mj-image src="https://secure.e-registernow.com/M3474/images/burgee.png" width="150px" alt="" />
     </mj-column>
   </mj-section>
 
@@ -125,7 +125,7 @@
         align="center"
         font-size="15px"
         line-height="22px">
-        If you have any questions don’t hesitate to email
+        If you have any questions don't hesitate to email
         <b><a href="mailto:fleet.manager@tscc.net"
           style="text-decoration:none;color:#8a8da0">fleet.manager@tscc.net</a></b>
         or call <b>(647)&nbsp;242&nbsp;-&nbsp;4856</b>.

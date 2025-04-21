@@ -3,7 +3,7 @@
   <!-- Company Header -->
   <mj-section background-color="white" padding="0px">
     <mj-column padding="0">
-      <mj-image src="../img/banner-no-text.jpg" width="600px" padding="0" alt="" />
+      <mj-image src="https://secure.e-registernow.com/M3474/images/banner-no-text.jpg" width="600px" padding="0" alt="" />
     </mj-column>
   </mj-section>
 
@@ -32,9 +32,9 @@
         Sailing Camp begins at 9am and runs until 4pm each day. Early/late pickup programs are
         <b><a style="color:#8a8da0;text-decoration:none" target="_blank" href="https://www.tscc.net/Youth/#FAQ">available</a></b>.
         <br /><br />
-        We’re excited to have you join us!
+        We're excited to have you join us!
       </mj-text>
-      <mj-image src="../img/burgee.png" width="150px" alt="" />
+      <mj-image src="https://secure.e-registernow.com/M3474/images/burgee.png" width="150px" alt="" />
     </mj-column>
   </mj-section>
 
@@ -72,7 +72,7 @@
     </mj-column>
   </mj-section>
 
-  <!-- WHAT TO BRING (ADULTS) -->
+  <!-- WHAT TO BRING -->
   <mj-section background-color="#ffffff" padding="0">
     <mj-column
       padding-top="40px"
@@ -97,10 +97,10 @@
             <li style="margin:0 0 12px 20px;" class="list-item-first">Lifejacket</li>
             <li style="margin:0 0 12px 20px;">
               Lunch each day (or purchase the
-              <b><a style="color:#8a8da0" target="_blank" href="https://www.tscc.net/Youth/#FAQ">Hot&nbsp;Lunch&nbsp;Program</a></b>).
+              <b><a style="color:#8a8da0" target="_blank" href="https://www.tscc.net/Frequently-Asked-Questions">Hot&nbsp;Lunch&nbsp;Program</a></b>).
             </li>
             <li style="margin:0 0 12px 20px;">Closed toed shoes that can get wet (water shoes, tevas, old pair of running shoes work great, avoid crocs)</li>
-            <li style="margin:0 0 12px 20px;">Sunscreen</li>
+            <li style="margin:0 0 12px 20px;">Hat, sunglasses, sunscreen and/or other forms of sun protection</li>
             <li style="margin:0 0 12px 20px;">A refillable waterbottle</li>
             <li style="margin:0 0 12px 20px;">Athletic style clothes/bathing suit that can get wet (avoid jeans and heavy cotton)</li>
             <li style="margin:0 0 12px 20px;">A change of clothes for before/after sailing</li>
@@ -121,9 +121,9 @@
         align="center"
         font-size="15px"
         line-height="22px">
-        If you have any questions don’t hesitate to email
+        If you have any questions don't hesitate to email
         <b><a href="mailto:programs@tscc.net"
-          style="text-decoration:none;color:#8a8da0">programs@tscc.net</a></b>
+          style="text-decoration:none;color:#8a8da0">programs@tscc.net</a></b> or
         <b><a href="mailto:head.instructor@tscc.net"
           style="text-decoration:none;color:#8a8da0">head.instructor@tscc.net</a></b>
         or call <b>(647)&nbsp;242&nbsp;-&nbsp;4856</b>.

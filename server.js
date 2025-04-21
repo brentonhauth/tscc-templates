@@ -5,10 +5,8 @@ const fs = require('fs');
 const cp = require('child_process');
 const app = require('express')();
 
-let Index = "";
-
-let templateNames = [];
-
+let Index = '';
+const templateNames = [];
 const uri = 'https://secure.e-registernow.com/M3474/images/';
 
 
@@ -17,36 +15,34 @@ const buildf = path => new Promise((resolve, reject) => {
   cp.exec(`./mjml ./src${path}.mjml` +
   ` --config.minify` +
   ` -o builds${path}.html`,
-  (e, o, _) => e ? reject(e) : resolve(o));
+  (err, out, _) => err ? reject(err) : resolve(out));
 });
-
-/** @param {string} path */
-const minifyf = path => {
-  path = `${__dirname}/builds${path}.html`;
-  let data = fs.readFileSync(path).toString();
-  data = data.replace(/\.\.\/img\//g, uri);
-  data = data.replace(/( ){2,}/g, ''); 
-  fs.writeFileSync(path, data);
-};
 
 
 app.get('/', (_, res) => res.send(Index));
 
-app.get(/\.(jpe?g|png|gif)$/i, (req, res) => res.sendFile(`${__dirname}${req.path}`));
+app.get(/\.(jpe?g|png|gif|ico)$/i, (req, res) => {
+  res.sendFile(`${__dirname}${req.path}`);
+});
 
-app.get('/build/*', (req, res, next) => {
-  var [_, path] = req.path.split(/\/build/);
+app.get('/all', (_, res, next) => {
+  const promises = [];
 
-  buildf(path).then(() => {
-    res.redirect(path);
+  for (let name of templateNames) {
+    promises.push(buildf(name).catch(err => {
+      console.error(err);
+    }));
+  }
+
+  Promise.all(promises).then(() => {
+    res.redirect('/');
   }).catch(next);
 });
 
-app.get('/full/*', (req, res, next) => {
-  var [_, path] = req.path.split(/\/full/);
+app.get('/build/*', (req, res, next) => {
+  const [, path] = req.path.split(/\/build/);
 
   buildf(path).then(() => {
-    minifyf(path);
     res.redirect(path);
   }).catch(next);
 });
@@ -83,15 +79,13 @@ fs.readdir('./src', (err, files) => {
       <td><a href="/build/${f}">
         <button>Build</button>
       </a></td>
-      <td><a href="/full/${f}">
-        <button>Minify</button>
-      </a></td>
     </tr>`;
     templateNames.push(`/${f}`);
   }
 
   Index = `<div style="text-align:center">
     <table style="margin-right:auto;margin-left:auto">${Index}</table>
+    <br /><a href="/all">Build All</a>
   </div>`;
 
   app.listen(8080, () => {
